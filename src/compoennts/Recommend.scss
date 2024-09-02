@@ -1,0 +1,47 @@
+.recommend-wrap {
+  width: 100%;
+  padding-top: 5px;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: none;
+  font-size: 0;
+  vertical-align: bottom;
+  white-space: nowrap;
+
+  .recomment-item {
+    display: inline-block;
+    padding-right: 10px;
+    box-sizing: content-box;
+
+    .cover {
+      border-radius: 16px;
+    }
+    
+    .name, .category {
+      white-space: nowrap;
+      font-size: 12px;
+      text-align: center;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      vertical-align: bottom;
+    }
+    
+    .name {
+      color: #333;
+      font-weight: bold;
+    }
+    
+    .category {
+      color: grey;
+    }
+  }
+  
+  .recomment-item:last-child{
+    padding-right: 0;
+  }
+}
+
+.recommend-wrap::-webkit-scrollbar {
+  display: none;
+}
+
